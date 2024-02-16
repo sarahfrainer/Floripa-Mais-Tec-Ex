@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> Página pessoal </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    </head>
+    <body>
+  <header class="header">
+    <nav>
+      <a href = "#sobre">Sobre</a>
+      <a href = "#contato">Contato</a>
+      <a href = "#formaçao">Formação</a>
+      </nav>
+  </header>
+  <main>
+    <h1> Sarah Frainer </h1>
+    <h2> Estudante FuturoDev </h2>
+    <section id="sobre">
+      <h3>Sobre</h3>
+      <p>Sou estudante do curso FuturoDev</p>
+    </section>
+    <section id="contato">
+      <h3>Contato</h3>
+      <li>E-mail: sbfrainer@gmail.com</li>
+      <li>
+        <a
+        target="_blank"
+        href="https://www.linkedin.com/in/sarah-beatriz-frainer-046510243/"
+        >Linkedin: Sarah Frainer</a>
+      </li>
+    </ul>
+    <section id="formaçao">
+      <h3>Formação acadêmica:</h3>
+      <ol>
+        <li>Ensino médio:
+          <ul>
+            <li>Ano de início: 2015</li>
+            <li>Ano de término: 2017</li>
+          </ul>
+        </li>
+        <li>Graduação:
+          <ul>
+            <li>Ano de início: 2019</li>
+            <li>Ano de término: 2023</li>
+          </ul>
+        </li>
+        <li>FuturoDev:
+          <ul>
+            <li>Ano de início: 2024</li>
+          </ul>
+        </li>
+      </ol>
+
+    </section>
+
+    <footer>
+      Criado por Sarah Frainer - 2024
+    </footer>
+  </main>
+
+    </body>
+</html>
