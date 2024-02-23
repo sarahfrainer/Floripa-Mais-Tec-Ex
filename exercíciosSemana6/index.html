@@ -7,24 +7,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="cabecalho">
         <nav>
-            <a href=".conteudoCentral">Perfil</a>
-            <a href="mensagem">Mande uma mensagem</a>
+            <a href=".conteudoCentral" id="iconePerfil">Perfil</a>
+            <a href="mensagem" id="iconeMensagem">Mande uma mensagem</a>
         </nav>
     </header>
     <main class="conteudoCentral">
+        <div class = "galeria">
         <image
             src="https://img.freepik.com/fotos-gratis/alegre-jovem-nova-funcionaria-atraente-pronta-ajuda-energizada-olhar-otimista-camera-confiante-cruzar-os-bracos-peito-autoconfiante-sorrindo-objetivo-dentuco-brilhante-futuro-bem-sucedido-fundo-branco_176420-51238.jpg?w=996&t=st=1708636560~exp=1708637160~hmac=f65b31c9b283fd9d758eb88189942bb35cdb3d40bb36c1d2789ab321985f6ed1"
-            alt="Foto de perfil do usuário";
-            id="fotoPerfil" width="200"; 
-            height="200" ; />
+            alt="Foto de perfil do usuário" 
+            class="imagem"/>
+        </div>
         <h1 id="nome">Nome do usuário</h1>
-        <h2 id="funcao">Minha função</h2>
         <section class="resumo">
+        <h2>Minha função</h2>
             <p>Escreva um resumo das suas experiências profissionais e acadêmicas.</p>
         </section>
         <section class="habilidades">
@@ -42,7 +44,7 @@
         </section>
         <section class="mensagem">
             <h2>Me mande uma mensagem!</h2>
-            <Button>Contato</Button>
+            <Button id="botao">Contato</Button>
         </section>
 
     </main>
