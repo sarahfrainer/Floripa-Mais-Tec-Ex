@@ -1,17 +1,31 @@
+body {
+    font-family:"Poppins", sans-serif;
+}
+
+.cabecalho, .conteudoCentral, .rodape {
+   text-align: center;
+}
+
 .cabecalho {
     background-color: black;
     font-size:x-large;
     color:wheat;
+    padding: 5px;
 }
 
 .conteudoCentral {
-    background-color: rgb(86, 0, 14);
+    background-color: rgb(120, 0, 20);
   color:white;
 
 }
 
-#nome {
+.resumo, .habilidades, .emprego, .mensagem {
     font-size: larger;
+}
+
+#nome {
+    font-size: 50px;
+    color: rgb(0, 0, 0);
 }
 
 #funcao {
@@ -20,5 +34,38 @@
 
 
 .rodape {
-    background-color: rgb(208, 42, 1);
+    background-color: rgb(81, 16, 0);
+    color: antiquewhite;
+}
+
+.galeria {
+    width: 100%;
+}
+
+.galeria .imagem {
+    width: 40%;
+    border-radius: 40%;
+    height: 40%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#botao {
+    background-color:rgb(255, 244, 29);
+    color:rgb(27, 5, 0);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 1%;
+    width: 130px;
+    height: 65px;
+    font-size:larger;
+
+}
+
+#botao:hover {
+    background-color: white;
+    transform: scale(1.2);
+
 }
