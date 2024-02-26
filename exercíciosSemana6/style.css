@@ -6,6 +6,9 @@ body {
    text-align: center;
 }
 
+a{
+text-decoration: none;}
+
 .cabecalho {
     background-color: black;
     font-size:x-large;
@@ -13,10 +16,22 @@ body {
     padding: 5px;
 }
 
+.cabecalho a{
+    color:rgb(255, 148, 166);
+    transform: 3s;
+}
+
+.cabecalho a:hover {
+    color: brown;
+}
+
 .conteudoCentral {
     background-color: rgb(120, 0, 20);
   color:white;
-
+  display:flex;
+  flex-direction: column;
+flex-wrap: wrap;
+align-items: center;
 }
 
 .resumo, .habilidades, .emprego, .mensagem {
@@ -26,6 +41,12 @@ body {
 #nome {
     font-size: 50px;
     color: rgb(0, 0, 0);
+    transition: transform 1s;
+}
+
+#nome:hover,
+#nome:focus {
+    color:rgb(255, 255, 255);
 }
 
 #funcao {
@@ -52,7 +73,7 @@ body {
     margin-right: 10px;
 }
 
-#botao {
+#Botao {
     background-color:rgb(255, 244, 29);
     color:rgb(27, 5, 0);
     margin-bottom: 30px;
@@ -64,7 +85,7 @@ body {
 
 }
 
-#botao:hover {
+#Botao:hover {
     background-color: white;
     transform: scale(1.2);
 

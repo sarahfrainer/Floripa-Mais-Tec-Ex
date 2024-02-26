@@ -9,7 +9,7 @@ let minhaFuncao = "Estudante de Programação";
 document.getElementById("funcao").innerHTML = `${minhaFuncao}`;
 
 let minhaExperiencia = "Estudante do curso FuturoDEV do Senai.";
-document.getElementById("experiencias").innerHTML = `${minhaExperiencia}`;
+document.getElementById("experiencias").innerHTML = `<i>${minhaExperiencia}</i>`;
 
 let minhaHab1 = "Programação Front-end;";
 document.getElementById("hab1").innerHTML = `${minhaHab1}`;
@@ -26,3 +26,10 @@ document.getElementById("hab4").innerHTML = `${minhaHab4}`;
 
 let minhaBusca = "Um estágio na área de programação que permita aprendar e praticar minhas habilidades.";
 document.getElementById("busca").innerHTML = `${minhaBusca}`;
+
+function exibirmensagem (){
+    prompt ("Digite uma mensagem para mim");
+}
+
+const botao = document.querySelector("#Botao");
+botao.addEventListener("click", exibirmensagem);
