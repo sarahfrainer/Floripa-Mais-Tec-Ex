@@ -1,0 +1,35 @@
+.header {
+    background-color: blue;
+    height: 50px;
+    padding: 20px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebar {
+    background-color: black;
+    color: white;
+    flex: 1 50px;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: brown;
+    flex: 5 50px;
+    padding: 20px;
+    margin: 10px;
+}
