@@ -1,0 +1,45 @@
+body {
+    background-color:wheat;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color:white;
+    width: 1100px;
+    height: 600px;
+    margin: 50px;
+    padding: 50px;
+
+}
+
+#titulo1 {
+    margin: 0px;
+
+}
+
+#nome, #username, #email, #senha, #telefone {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-top: 10px;
+}
+
+p, div {
+    margin: 20px;
+}
+
+#registrobt {
+    align-self: center;
+    background-color: aquamarine;
+    border-radius: 5px;
+}
