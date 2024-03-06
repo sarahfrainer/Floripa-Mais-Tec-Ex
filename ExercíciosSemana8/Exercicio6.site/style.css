@@ -1,0 +1,89 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: black;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template-areas:
+        "areaLogo header"
+        "main foto";
+    color: white;
+    height: 500px;
+}
+
+.areaLogo {
+    background-color: rgb(0, 161, 201);
+    color: rgb(255, 25rgb(73, 161, 255)5);
+    padding: 20px;
+    margin: 5px;
+    grid-area: areaLogo;
+    grid-row-start: 1;
+    margin-left: 200px;
+}
+
+.header {
+    background-color: blue;
+    margin: 5px;
+  padding: 20px;
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 200px;
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    background-color: brown;
+    grid-row-start: 2;
+    grid-area: main;
+    padding: 20px;
+    margin: 5px;
+    margin-left: 200px;
+}
+
+.foto {
+    background-color: brown;
+    grid-row-start: 2;
+    grid-area: foto;
+    padding: 20px;
+    margin: 5px;
+    margin-right: 200px;
+}
+
+.tag {
+  margin-left: 20px;
+}
+
+
+
+a:link {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    text-decoration: none; 
+   }
+   
+
+a:before {
+  content: '';
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 0;
+  height: 2px; 
+  background-color: #ffffff; 
+  transition: width 0.3s ease; 
+}
+
+a:hover::before {
+  width: 100%; 
+}
