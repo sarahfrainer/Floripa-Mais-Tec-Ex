@@ -4,6 +4,7 @@ body {
     padding: 0;
     height: 100%;
     background-color: black;
+    font-family:"Roboto", sans-serif;
 }
 
 .container {
@@ -14,12 +15,12 @@ body {
     grid-template-areas:
         "areaLogo header"
         "main foto";
+    background-color: black;
     color: white;
     height: 500px;
 }
 
 .areaLogo {
-    background-color: rgb(0, 161, 201);
     color: rgb(255, 25rgb(73, 161, 255)5);
     padding: 20px;
     margin: 5px;
@@ -29,7 +30,6 @@ body {
 }
 
 .header {
-    background-color: blue;
     margin: 5px;
   padding: 20px;
     grid-area: header;
@@ -42,7 +42,6 @@ body {
 }
 
 .main {
-    background-color: brown;
     grid-row-start: 2;
     grid-area: main;
     padding: 20px;
@@ -51,7 +50,6 @@ body {
 }
 
 .foto {
-    background-color: brown;
     grid-row-start: 2;
     grid-area: foto;
     padding: 20px;
@@ -61,9 +59,29 @@ body {
 
 .tag {
   margin-left: 20px;
+  font-size: 20px;
 }
 
+#titulo {
+    font-size: 70px;
+}
 
+#texto {
+  font-size: 25px;
+  color: #B2B2B2;
+}
+
+#botao {
+    background-color: #FFBF00;
+    color: #332200;
+    border-radius: 5px;
+    width: 200px;
+    padding: 20px;
+  font-size: 17px;
+  
+  
+  
+}
 
 a:link {
     text-decoration: none;
