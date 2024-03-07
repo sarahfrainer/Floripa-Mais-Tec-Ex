@@ -28,4 +28,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     
     document.getElementById('consulta').addEventListener('click', consultarPreco);
+
+    let carrinho = [];
+
+    function adicionarCarrinho (resposta2){
+        const final = carrinho.push(resposta2);
+        console.log (final);
+    }
+
+    document.getElementById('compra').addEventListener('click', adicionarCarrinho);
+
 });
