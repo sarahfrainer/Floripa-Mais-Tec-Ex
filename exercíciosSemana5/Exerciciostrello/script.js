@@ -31,9 +31,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let carrinho = [];
 
-    function adicionarCarrinho (resposta2){
-        const final = carrinho.push(resposta2);
-        console.log (final);
+    function adicionarCarrinho (){
+        const resposta4 = resposta.value.toLowerCase();
+        const prodArray = valCarrinho (resposta4);
+        carrinho.push(prodArray);
+        console.log (carrinho);
+    }
+
+    function valCarrinho (resposta4){
+        switch (resposta4) {
+            case 'banana':
+            case '1':
+                return 'banana';
+
+            case 'mirtilo':
+            case '2':
+                return 'mirtilo';
+
+            case 'morango':
+            case '3':
+                return 'morango';
+
+            default:
+                return 'Produto não cadastrado';
+    }
     }
 
     document.getElementById('compra').addEventListener('click', adicionarCarrinho);
