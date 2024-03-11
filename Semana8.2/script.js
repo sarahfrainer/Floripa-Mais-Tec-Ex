@@ -1,10 +1,10 @@
-var tit = document.getElementById('titulo');
+var tit = document.getElementById('titulo1');
 
 console.log (tit);
 
 tit.style.backgroundColor = 'blue';
 
-var tituloprinc = document.querySelector ('.titulo1');
+var tituloprinc = document.querySelector ('#titulo1');
 
 console.log (tituloprinc)
 
@@ -47,7 +47,7 @@ estiloLista.forEach (item=> {
     item.style.color = 'red';
 })
 
-var titulo1 = document.querySelector ('#titulo');
+var titulo1 = document.querySelector ('#titulo1');
 titulo1.setAttribute("class", "testandoClasse");
 console.log (titulo1);
 
@@ -60,3 +60,7 @@ var itenslista = document.querySelectorAll ('.item');
 itenslista[0].setAttribute ("id", "item2");
 
 console.log (itenslista);
+
+var item3 = document.querySelector('#item3');
+item3.removeAttribute('class');
+console.log (item3);
