@@ -40,3 +40,9 @@ lista.appendChild(novoItem);
 var excluirItem = document.querySelector ('.lista');
 var ItemExcluido = document.querySelector ('.lista li')
 excluirItem.removeChild(ItemExcluido);
+
+
+var estiloLista = document.querySelectorAll ('.item');
+estiloLista.forEach (item=> {
+    item.style.color = 'red';
+})
