@@ -36,3 +36,7 @@ var lista = document.querySelector('.lista');
 console.log(lista);
 
 lista.appendChild(novoItem);
+
+var excluirItem = document.querySelector ('.lista');
+var ItemExcluido = document.querySelector ('.lista li')
+excluirItem.removeChild(ItemExcluido);
