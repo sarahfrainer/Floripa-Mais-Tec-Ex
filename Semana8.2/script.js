@@ -25,3 +25,14 @@ console.log (itenslista);
 itenslista[0].textContent = 'Item 1 atualizado;';
 itenslista[1].textContent = 'Item 2 atualizado;';
 itenslista[2].textContent = 'Item 3 atualizado;';
+
+
+var novoItem = document.createElement("li");
+var texto = document.createTextNode("Novo item inserido;");
+novoItem.appendChild(texto);
+console.log (novoItem);
+
+var lista = document.querySelector('.lista');
+console.log(lista);
+
+lista.appendChild(novoItem);
