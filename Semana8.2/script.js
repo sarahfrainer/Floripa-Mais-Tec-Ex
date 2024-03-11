@@ -46,3 +46,7 @@ var estiloLista = document.querySelectorAll ('.item');
 estiloLista.forEach (item=> {
     item.style.color = 'red';
 })
+
+var titulo1 = document.querySelector ('#titulo');
+titulo1.setAttribute("class", "testandoClasse");
+console.log (titulo1);
