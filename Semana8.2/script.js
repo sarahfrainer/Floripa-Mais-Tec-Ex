@@ -50,3 +50,7 @@ estiloLista.forEach (item=> {
 var titulo1 = document.querySelector ('#titulo');
 titulo1.setAttribute("class", "testandoClasse");
 console.log (titulo1);
+
+var paragrafo = document.querySelector ('#paragrafo');
+paragrafo.removeAttribute ("class");
+console.log (paragrafo);
