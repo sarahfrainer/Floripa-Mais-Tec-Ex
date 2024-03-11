@@ -54,3 +54,9 @@ console.log (titulo1);
 var paragrafo = document.querySelector ('#paragrafo');
 paragrafo.removeAttribute ("class");
 console.log (paragrafo);
+
+var itenslista = document.querySelectorAll ('.item');
+
+itenslista[0].setAttribute ("id", "item2");
+
+console.log (itenslista);
