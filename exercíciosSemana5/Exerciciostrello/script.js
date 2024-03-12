@@ -1,6 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const resposta = document.getElementById('valor');
     let carrinho = [];
+    const carrinhoContainer = document.getElementById('carrinho-container');
+    const paragrafoTotal = document.createElement('p');
+    carrinhoContainer.appendChild(paragrafoTotal); 
 
     function consultarPreco() {
         const resposta2 = resposta.value.toLowerCase();
@@ -32,6 +35,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const prodArray = valCarrinho(resposta4);
         carrinho.push(prodArray);
         console.log(carrinho);
+
+        let total = 0;
+        carrinho.forEach(item => {
+            const preço = parseFloat(item.preço.replace('R$', '').replace(',', '.'));
+            total += preço;
+        });
+
+        paragrafoTotal.textContent = "O valor da compra é: R$" + total.toFixed(2);
     }
 
     function valCarrinho(resposta4) {
@@ -53,21 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function consultarValor() {
-        let total = 0;
-        if (carrinho.length > 0) {
-        carrinho.forEach(item => {
-            const preço = parseFloat(item.preço.replace('R$', '').replace(',', '.'));
-            total += preço;
-        });
-        alert("O total da compra é: R$" + total.toFixed(2));
-    }
-        else {
-        alert ("O carrinho está vazio!")
-        }
-    }
-
     document.getElementById('consulta').addEventListener('click', consultarPreco);
     document.getElementById('compra').addEventListener('click', adicionarCarrinho);
-    document.getElementById('valorCompra').addEventListener('click', consultarValor);
 });
