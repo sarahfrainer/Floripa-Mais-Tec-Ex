@@ -1,4 +1,21 @@
 
+var fundo = document.querySelector('body');
+
+fundo.style.color = 'blue';
+fundo.style.backgroundColor = 'black';
+
+var lista = document.querySelector ('.lista');
+lista.style.color = 'white';
+lista.style.backgroundColor = 'purple';
+lista.style.padding = '10px';
+lista.style.margin = '10px';
+lista.style.display = 'flex';
+lista.style.flexDirection = 'column';
+lista.style.justifyContent = 'center';
+lista.style.alignItems = 'center';
+
+
+
 function criacao (){
 var lista = document.querySelector('.lista');
 console.log (lista);
@@ -12,6 +29,8 @@ criarTarefa.setAttribute("class","item");
 var coletarResposta = document.querySelector('#tarefa').value;
 
 criarTarefa.appendChild(document.createTextNode(coletarResposta));
+
+criarTarefa.style.margin = '10px';
 
 console.log (criarTarefa);
 
@@ -27,6 +46,8 @@ criarBt1.setAttribute("id","bt1");
 console.log(criarBt1);
 
 criarBt1.appendChild (document.createTextNode("Concluído"));
+
+criarBt1.style.margin = '10px';
 
 criarTarefa.appendChild(criarBt1);
 
