@@ -1,11 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     const resposta = document.getElementById('valor');
     let carrinho = [];
     const carrinhoContainer = document.getElementById('carrinho-container');
     const paragrafoTotal = document.createElement('p');
-    carrinhoContainer.appendChild(paragrafoTotal); 
+    carrinhoContainer.appendChild(paragrafoTotal);
     const paragrafo2 = document.createElement('p');
-    carrinhoContainer.appendChild(paragrafo2); 
+    carrinhoContainer.appendChild(paragrafo2);
+
+    const paragrafo3 = document.createElement('p');
+    carrinhoContainer.appendChild(paragrafo3);
+
 
     function consultarPreco() {
         const resposta2 = resposta.value.toLowerCase();
@@ -47,8 +52,24 @@ document.addEventListener("DOMContentLoaded", function () {
         paragrafoTotal.textContent = "O valor da compra é: R$" + total.toFixed(2);
 
         paragrafo2.textContent = "A quantidade total de itens no carrinho é: " + carrinho.length;
-    }
 
+
+        localStorage.setItem('carrinho', JSON.stringify(carrinho));
+        const carrinhoFromLocalStorage = JSON.parse(localStorage.getItem('carrinho'));
+        console.log(carrinhoFromLocalStorage);
+
+        let itemsText = "";
+        carrinhoFromLocalStorage.forEach(item => {
+            itemsText += `${item.nome}: ${item.preço}, `;
+        });
+        paragrafo3.textContent = "Os itens no carrinho são: " + itemsText.slice(0, -2);
+}
+
+
+
+   
+
+ 
     function valCarrinho(resposta4) {
         switch (resposta4) {
             case 'banana':
@@ -69,5 +90,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.getElementById('consulta').addEventListener('click', consultarPreco);
-    document.getElementById('compra').addEventListener('click', adicionarCarrinho);
+document.getElementById('compra').addEventListener('click', adicionarCarrinho);
 });
