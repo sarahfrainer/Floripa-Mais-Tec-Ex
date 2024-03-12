@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const carrinhoContainer = document.getElementById('carrinho-container');
     const paragrafoTotal = document.createElement('p');
     carrinhoContainer.appendChild(paragrafoTotal); 
+    const paragrafo2 = document.createElement('p');
+    carrinhoContainer.appendChild(paragrafo2); 
 
     function consultarPreco() {
         const resposta2 = resposta.value.toLowerCase();
@@ -43,6 +45,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         paragrafoTotal.textContent = "O valor da compra é: R$" + total.toFixed(2);
+
+        paragrafo2.textContent = "A quantidade total de itens no carrinho é: " + carrinho.length;
     }
 
     function valCarrinho(resposta4) {
