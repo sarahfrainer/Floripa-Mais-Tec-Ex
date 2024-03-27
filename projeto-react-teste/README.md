@@ -1,8 +1,14 @@
-# React + Vite
+# Site para trilhas
+## Site para cadastro e pesquisa de trilhas ecológicas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é um mini-projeto pensado para o curso Floripa Mais Tec. Nele, desenvolvi um site onde os usuários podem encontrar e cadastrar trilhas ecológicas. O projeto utiliza React e conta com três páginas interligadas (a página inicial, a para cadastro de nova trilha e a para listagem).
 
-Currently, two official plugins are available:
+## Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Objetivo:** Reunir informações sobre trilhas, incentivando, assim, o contato com a natureza e o exercício físico.
+
+**Funcionalidades:**
+- Visualizar e buscar entre as trilhas já cadastradas
+- Cadastrar nova trilha
+
+**Layout:** O foco é proporcionar uma experiência agradável e funcional para o usuário.
