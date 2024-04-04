@@ -1,14 +1,20 @@
-import Card from "./components/Card.jsx"
+import Card from "./components/Card.js"
 import "./App.css"
 
 
 export default function App() {
   return (
-      <div class="pagina">
-      <h1 class="titulo2">Explore trilhas incríveis</h1>
-      <Card titulo="Trilha do macaco" cidadeEstado="Florianópolis - SC" criador="Sarah" duracao="2 horas" trajeto="6km" dificuldade="intermediário" tipoDeTrilha="Caminhada" link="https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
-      <Card titulo="Trilha do Damião" cidadeEstado="Bombinhas - SC" criador="Sarah" duracao="1 hora" trajeto="3km" dificuldade="iniciante" tipoDeTrilha="Caminhada" link="https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
-      <Card titulo="Trilha do Canoa" cidadeEstado="Piçarras - SC" criador="Sarah" duracao="3,5 horas" trajeto="8km" dificuldade="avançado" tipoDeTrilha="Caminhada" link="https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"/>
-      </ div>
-  )
+    <div>
+      <Card
+        titulo="Titulo do Card"
+        cidadeEstado="Cidade, Estado"
+        criador="Nome do Criador"
+        duracao="Duração"
+        trajeto="Trajeto"
+        dificuldade="Dificuldade"
+        tipoDeTrilha="Tipo de Trilha"
+        link="URL_da_Imagem"
+      />
+    </div>
+  );
 }
