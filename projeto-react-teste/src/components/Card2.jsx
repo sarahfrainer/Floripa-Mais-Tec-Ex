@@ -1,5 +1,5 @@
 import React from 'react';
-import useFetch from '../pages/React/Hooks/useFetch';
+import useFetch from '../pages/React/Hooks/useFetch.js';
 import Card from "./Card.jsx"
 
 const myCard = () => {

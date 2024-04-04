@@ -1,10 +1,11 @@
-import Card from "./components/Card.js"
+import Card from "./components/Card2.jsx"
 import "./App.css"
 
 
 export default function App() {
   return (
-    <div>
+    <div className="pagina">
+      <h1 className="titulo2">Explore trilhas incríveis</h1>
       <Card
         titulo="Titulo do Card"
         cidadeEstado="Cidade, Estado"

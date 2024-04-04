@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  .header {
+    background-color: rgb(62, 73, 0);
+    color:white;
+    display: flex;
+    padding: 15px;
+    font-size: medium;
+  }
+
+.push {
+  margin-left: 850px;
+}
+
+#palavra3 {
+  margin-left: 150px;
+}
+
+#palavra1 {
+  margin-left: 50px;
+}
