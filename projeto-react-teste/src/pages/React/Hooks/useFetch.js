@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { UsuariosContext } from '../../../context/UsuariosContext';
 // import "./public/listaCards.json"
 
 const useFetch = (url) => {
@@ -9,7 +10,7 @@ const useFetch = (url) => {
     useEffect(() => {
         const fetchCard = async() => {
             try {
-                const response = await fetch("./public/listaCards.json");
+                const response = await fetch("../../../context/UsuariosContext");
                 if (!response.ok) {
                     throw new Error ("Problema na conexão");
                 }
