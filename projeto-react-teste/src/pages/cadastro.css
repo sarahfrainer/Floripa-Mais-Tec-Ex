@@ -1,4 +1,4 @@
-/* .pagina {
+.pagina {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,4 +8,4 @@
   .titulo2 {
     margin: 1em auto;
     color:rgb(65, 72, 0);
-  } */
+  }
