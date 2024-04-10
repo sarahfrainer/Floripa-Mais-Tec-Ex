@@ -1,0 +1,7 @@
+
+
+function cadastro () {
+
+}
+
+export default cadastro

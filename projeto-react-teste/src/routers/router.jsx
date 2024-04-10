@@ -1,17 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
+import home from "../pages/home";
+import cadastro from "../pages/cadastro";
+import lista from "../pages/lista";
 
 const routers = createBrowserRouter ([
     {
         path: "/",
-        element:
+        element: <home />
     },
     {
-        path: "/",
-        element:
+        path: "/cadastro",
+        element: <cadastro />
     },
     {
-        path: "/",
-        element:
+        path: "/lista-trilhas",
+        element: <lista />
     },
 ])
 
