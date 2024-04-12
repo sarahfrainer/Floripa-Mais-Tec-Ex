@@ -1,32 +1,16 @@
-import navbar from "./components/navbar"
-import footer from "./components/footer"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 import {Outlet} from "react-router-dom"
+import { TrilhasContext, TrilhasContextProvider } from "./context/TrilhasContext"
 
 export default function App () {
   return (
-    <div className="site">
-      <navbar />
+    <TrilhasContextProvider>
+      <Navbar />
 
       <Outlet />
 
-      <footer />
-    </div>
+      <Footer />
+    </TrilhasContextProvider>
   )
 }
-// export default function App() {
-//   return (
-//     <div className="pagina">
-//       <h1 className="titulo2">Explore trilhas incríveis</h1>
-//       <Card
-//         titulo="Titulo do Card"
-//         cidadeEstado="Cidade, Estado"
-//         criador="Nome do Criador"
-//         duracao="Duração"
-//         trajeto="Trajeto"
-//         dificuldade="Dificuldade"
-//         tipoDeTrilha="Tipo de Trilha"
-//         link="URL_da_Imagem"
-//       />
-//     </div>
-//   );
-// }

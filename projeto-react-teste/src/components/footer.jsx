@@ -1,5 +1,7 @@
-export default function footer () {
+import "./footer.css"
+
+export default function Footer () {
     return (
-        <div>Criado por Sarah Frainer</div>
+        <div className="footer">Criado por Sarah Frainer</div>
     )
 }

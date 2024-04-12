@@ -1,9 +1,9 @@
 import { createContext, useState } from "react";
 
-export const UsuariosContext = createContext ()
+export const TrilhasContext = createContext()
 
-export const UsuariosContextProvider = ({children}) => {
-    const [usuarios, setUsuarios] = useState ([
+export const TrilhasContextProvider = ({children}) => {
+    const [trilhas, setTrilhas] = useState ([
         {
             titulo: "Trilha do macaco",
             cidadeEstado: "Florianópolis - SC",
@@ -37,8 +37,8 @@ export const UsuariosContextProvider = ({children}) => {
     ])
 
     return (
-        <UsuariosContext.Provider value={{usuarios, setUsuarios}}>
+        <TrilhasContext.Provider value={{trilhas, setTrilhas}}>
             {children}
-        </UsuariosContext.Provider>
+        </TrilhasContext.Provider>
     )
 }

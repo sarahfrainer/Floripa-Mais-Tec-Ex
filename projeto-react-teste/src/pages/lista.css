@@ -1,3 +1,14 @@
+.geral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tituloPagina {
+  margin: 20px;
+  color:rgb(2, 41, 0);
+}
+
 
 .container {
   display: flex;
@@ -16,19 +27,19 @@
   flex-direction: column;
   box-shadow: .2em .2em .8em black;
   width: 600px;
-  height: 200px;
+  height: 250px;
 }
 
 
 
-.titulo, .criador, .duracao, .trajeto, .dificuldade, .tipodeTrilha, .imagem {
+.titulo, .criador, .duracao, .trajeto, .dificuldade, .tipoDeTrilha, .imagem, .cidadeEstado {
   margin: 10px;
 }
 
 .imagem {
   align-self: flex-start;
   justify-self: start;
-  height: 200px;
+  height: 250px;
   width: 200px;
   margin: 5px 0px 0px 0px;
 }
@@ -52,12 +63,18 @@
   color: grey;
 }
 
+
 .trajeto {
   align-self: self-start;
   color: grey;
 }
 
 .dificuldade {
+  align-self: self-start;
+}
+
+
+.cidadeEstado {
   align-self: self-start;
 }
 

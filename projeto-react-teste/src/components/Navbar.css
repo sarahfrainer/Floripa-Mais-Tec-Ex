@@ -1,0 +1,21 @@
+.navBar {
+    background-color: rgb(24, 63, 21);
+    color: white;
+    display: flex;
+    justify-items:center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.GuiaTrilhas, .GuiaHome, .GuiaCadastro {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.GuiaHome {
+    align-self: self-start;
+}
+

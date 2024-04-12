@@ -1,34 +1,41 @@
-import Card from "../components/Card";
-import "./lista.css"
-import { UsuariosContext } from "../context/UsuariosContext";
+import { Card, CardActions, CardContent, CardHeader } from "@mui/material";
+import { TrilhasContext } from "../context/TrilhasContext";
 import { useContext } from "react";
-import React from "react";
+import "./lista.css"
 
-function Lista () {
+function Lista() {
 
-  const {usuarios} = useContext (UsuariosContext)
+  const { trilhas } = useContext(TrilhasContext)
 
-    return (
-        <div className="pagina">
-          <h1 className="titulo2">Explore trilhas incríveis</h1>
-        {usuarios.map((usuario, index) => (
-          <div className="container">
-          <div className="texto">
-          <h1 className="titulo" key={index}><b>{usuario.nome}</b></h1>
-          <p className="criador" key={index}><b>Por: {usuario.criador}</b></p>
-          <p className="duracao" key={index}>Duração: {usuario.duracao}</p>
-          <p className="trajeto" key={index}>Trajeto: {usuario.trajeto}</p>
-          <div className="dificuldade" key={index}>{usuario.dificuldade}</div>
-          <div className="tipodeTrilha" key={index}>{usuario.tipoDeTrilha}</div>
-          </div>
-          <div className="foto">
-          <img className="imagem" index={key} src={usuario.link}/>
-          </div>
-          </div>
-           ))}
-           </div>
-         );
-       };
-  
+  return (
+    <div className="geral">
+      <div className="tituloPagina">
+        <h1>Explore trilhas incríveis!</h1>
+      </div>
+      {trilhas.map((trilha, index) => {
+        return (
+          <Card key={index}>
+            <CardContent>
+              <div className="container">
+                <div className="texto">
+                  <h1 className="titulo">{trilha.titulo}</h1>
+                  <h3 className="cidadeEstado">{trilha.cidadeEstado}</h3>
+                  <p className="criador">Por: {trilha.criador}</p>
+                  <p className="duracao">Duração: {trilha.duracao}</p>
+                  <p className="trajeto">Trajeto: {trilha.trajeto}</p>
+                  <div className="dificuldade">{trilha.dificuldade}</div>
+                  <div className="tipoDeTrilha">{trilha.tipoDeTrilha}</div>
+                </div>
+                <div className="foto">
+                  <img className="imagem" src={trilha.link} />
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        )
+      })}
+    </div>
+  );
+}
 
 export default Lista;
