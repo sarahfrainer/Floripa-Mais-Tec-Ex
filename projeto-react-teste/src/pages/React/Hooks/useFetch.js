@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { UsuariosContext } from '../../../context/UsuariosContext';
+import { UsuariosContext } from '../../../context/TrilhasContext';
 // import "./public/listaCards.json"
 
 const useFetch = (url) => {
