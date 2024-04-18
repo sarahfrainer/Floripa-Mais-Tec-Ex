@@ -1,0 +1,169 @@
+body {
+    background-color: rgb(236, 249, 224);
+    background-blend-mode: soft-light;
+}
+
+.formulario {
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo"
+    "ntrilha1 ntrilha1"
+    "ntrilha2 ntrilha2"
+    "duracao1 trajeto1"
+    "duracao2 trajeto2"
+    "cidade1 estado1"
+    "cidade2 estado2"
+    "nusuario1 dificuldade1"
+    "nusuario2 dificuldade2"
+    "tipoDeTrilha1 tipoDeTrilha1"
+    "tipoDeTrilha2 tipoDeTrilha2"
+    "imagemTrilha1 imagemTrilha1"
+    "imagemTrilha2 imagemTrilha2"
+    "cadastroContainer cadastroContainer";
+    justify-items:stretch;
+    padding: 30px;
+    align-items: center;
+    width: 600px;
+    margin-left: 430px;
+    grid-template-columns: repeat(2, auto); 
+}
+
+#titulo {
+    grid-area: titulo;
+    margin: 30px;
+    margin-left: 0px;
+}
+
+#ntrilha1 {
+    grid-area: ntrilha1;
+    margin: 5px;
+}
+
+#ntrilha2 {
+    grid-area: ntrilha2;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+}
+
+#duracao1 {
+    grid-area: duracao1;
+    margin: 5px;
+}
+
+#duracao2 {
+    grid-area: duracao2;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+}
+
+#trajeto1 {
+    grid-area: trajeto1;
+    margin: 5px;
+}
+
+#trajeto2 {
+    grid-area: trajeto2;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+}
+
+#cidade1 {
+    grid-area: cidade1;
+    margin: 5px;
+}
+
+#cidade2 {
+    grid-area: cidade2;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+}
+
+#estado1 {
+    grid-area: estado1;
+    margin: 5px;
+}
+
+#estado2 {
+    grid-area: estado2;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+}
+
+#nusuario1 {
+    grid-area: nusuario1;
+    margin: 5px;
+}
+
+#nusuario2 {
+    grid-area: nusuario2;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+}
+
+#dificuldade1 {
+    grid-area: dificuldade1;
+    margin: 5px;
+}
+
+#dificuldade2 {
+    grid-area: dificuldade2;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+}
+
+#tipoDeTrilha1 {
+    grid-area: tipoDeTrilha1;
+    margin: 5px;
+}
+
+#tipoDeTrilha2 {
+    grid-area: tipoDeTrilha2;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+}
+
+#imagemTrilha1 {
+    grid-area: imagemTrilha1;
+    margin: 5px;
+}
+
+#imagemTrilha2 {
+    grid-area: imagemTrilha2;
+    margin: 5px;
+    padding: 5px;
+    background: none;
+}
+
+#cadastro {
+    margin-right: 20px;
+    padding: 5px;
+    background-color: rgb(24, 63, 21);
+    color: white;
+    height: 30px;
+    width: 90px;
+    justify-self: start;
+}
+
+#voltar {
+    padding: 5px;
+    background: none;
+    height: 30px;
+    width: 90px;
+    justify-self: start;
+}
+
+#cadastroContainer {
+    grid-area: cadastroContainer;
+    margin: 20px;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5px;
+}
