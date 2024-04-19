@@ -32,7 +32,7 @@
 
 
 
-.titulo, .criador, .duracao, .trajeto, .dificuldade, .tipoDeTrilha, .imagem, .cidadeEstado {
+.ntrilha, .nusuario, .duracao, .trajeto, .dificuldade, .tipoDeTrilha, .imagem, .cidadeEstado {
   margin: 10px;
 }
 
@@ -45,7 +45,7 @@
 }
 
 
-.titulo {
+.ntrilha {
   justify-self: center;
   align-self: center;
   font-size: 12px;
@@ -53,7 +53,7 @@
 }
 
 
-.criador {
+.nusuario {
   align-self: self-end;
   color:rgb(2, 41, 0);
 }

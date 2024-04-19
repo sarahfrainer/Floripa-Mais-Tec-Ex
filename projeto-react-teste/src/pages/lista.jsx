@@ -5,7 +5,7 @@ import "./lista.css"
 
 function Lista() {
 
-  const { trilhas } = useContext(TrilhasContext)
+  const { trilhas, adicionarTrilha, setTrilhas } = useContext(TrilhasContext);
 
   return (
     <div className="geral">
@@ -18,16 +18,16 @@ function Lista() {
             <CardContent>
               <div className="container">
                 <div className="texto">
-                  <h1 className="titulo">{trilha.titulo}</h1>
+                  <h1 className="ntrilha">{trilha.ntrilha}</h1>
                   <h3 className="cidadeEstado">{trilha.cidadeEstado}</h3>
-                  <p className="criador">Por: {trilha.criador}</p>
+                  <p className="nusuario">Por: {trilha.nusuario}</p>
                   <p className="duracao">Duração: {trilha.duracao}</p>
                   <p className="trajeto">Trajeto: {trilha.trajeto}</p>
                   <div className="dificuldade">{trilha.dificuldade}</div>
                   <div className="tipoDeTrilha">{trilha.tipoDeTrilha}</div>
                 </div>
                 <div className="foto">
-                  <img className="imagem" src={trilha.link} />
+                  <img className="imagem" src={trilha.imagemTrilha} />
                 </div>
               </div>
             </CardContent>

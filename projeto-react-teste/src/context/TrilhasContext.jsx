@@ -5,40 +5,44 @@ export const TrilhasContext = createContext()
 export const TrilhasContextProvider = ({children}) => {
     const [trilhas, setTrilhas] = useState ([
         {
-            titulo: "Trilha do macaco",
+            ntrilha: "Trilha do macaco",
             cidadeEstado: "Florianópolis - SC",
-            criador: "Sarah",
+            nusuario: "Sarah",
             duracao: "2 horas",
             trajeto: "6km",
             dificuldade: "intermediário",
             tipoDeTrilha: "Caminhada",
-            link: "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            imagemTrilha: "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
-            titulo: "Trilha do Damião",
+            ntrilha: "Trilha do Damião",
             cidadeEstado: "Bombinhas - SC",
-            criador: "Sarah",
+            nusuario: "Sarah",
             duracao: "1 hora",
             trajeto: "3km",
             dificuldade: "iniciante",
             tipoDeTrilha: "Caminhada",
-            link: "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            imagemTrilha: "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         },
         {
-            titulo: "Trilha da Canoa",
+            ntrilha: "Trilha da Canoa",
             cidadeEstado: "Piçarras - SC",
-            criador: "Sarah",
+            nusuario: "Sarah",
             duracao: "3,5 hora",
             trajeto: "8km",
             dificuldade: "avançado",
             tipoDeTrilha: "Caminhada",
-            link: "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            imagemTrilha: "https://images.pexels.com/photos/917510/pexels-photo-917510.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
         }
     ])
 
+    function adicionarTrilha(trilha) {
+        setTrilhas((prevTrilhas) => [...prevTrilhas, {...trilha, id: prevTrilhas.length + 1}]);
+    }
+
     return (
-        <TrilhasContext.Provider value={{trilhas, setTrilhas}}>
+        <TrilhasContext.Provider value={{adicionarTrilha, trilhas, setTrilhas}}>
             {children}
         </TrilhasContext.Provider>
     )
-}
+} 

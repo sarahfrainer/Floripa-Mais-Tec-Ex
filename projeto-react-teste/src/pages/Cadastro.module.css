@@ -24,6 +24,7 @@ body {
     padding: 30px;
     align-items: center;
     width: 600px;
+    height: 700px;
     margin-left: 430px;
     grid-template-columns: repeat(2, auto); 
 }
