@@ -8,7 +8,8 @@ import { useContext } from "react";
 function Cadastro() {
     const { register,
         handleSubmit, 
-        formState: { errors }
+        formState: { errors },
+        reset
         } = useForm();
 
         const { adicionarTrilha } = useContext (TrilhasContext);
